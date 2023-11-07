@@ -38,29 +38,11 @@ export default function Contact() {
       <p>Linkedin: Gaston Soliz</p>
       <p>GitHub: GastonSoliz</p>
       {/* MAPS DE QUILMES */}
-      <form
-        name="contact"
-        method="POST"
-        data-netlify="true"
-        action="/contact"
-        onSubmit={handleSubmit}
-      >
+      <form name="contact" method="POST" action="/contact">
         <label>Name: </label>
-        <input
-          type="text"
-          name="fullname"
-          placeholder="Insert Your Name..."
-          value={formData.name}
-          onChange={handleChange}
-        />
+        <input type="text" name="fullname" placeholder="Insert Your Name..." />
         <label>Email: </label>
-        <input
-          type="email"
-          name="email"
-          placeholder="Insert Your Email..."
-          value={formData.email}
-          onChange={handleChange}
-        />
+        <input type="email" name="email" placeholder="Insert Your Email..." />
         {/* <label>Subject: </label>
         <input type="text" name="subject" /> */}
 
@@ -69,10 +51,8 @@ export default function Contact() {
           type="text"
           name="message"
           placeholder="Insert Your Message..."
-          value={formData.message}
-          onChange={handleChange}
         ></textarea>
-        <button>Send Message</button>
+        <button type="submit">Send Message</button>
       </form>
     </>
   );
