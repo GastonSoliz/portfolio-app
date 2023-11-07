@@ -6,15 +6,20 @@ export default function Contact() {
       <p>Linkedin: Gaston Soliz</p>
       <p>GitHub: GastonSoliz</p>
       {/* MAPS DE QUILMES */}
-      <form name="contact" netlify>
+      <form name="contact" method="POST" data-netlify="true" action="/contact">
         <label>Name: </label>
-        <input type="" name="fullname" />
+        <input type="text" name="fullname" placeholder="Insert Your Name..." />
         <label>Email: </label>
-        <input type="email" name="email" />
-        <label>Subject: </label>
-        <input type="text" name="subject" />
+        <input type="email" name="email" placeholder="Insert Your Email..." />
+        {/* <label>Subject: </label>
+        <input type="text" name="subject" /> */}
+
         <label>Message: </label>
-        <input type="text" name="message" />
+        <textarea
+          type="text"
+          name="message"
+          placeholder="Insert Your Message..."
+        ></textarea>
         <button>Send Message</button>
       </form>
     </>
