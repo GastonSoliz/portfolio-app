@@ -32,7 +32,7 @@ export default function Contact() {
       <p>Linkedin: Gaston Soliz</p>
       <p>GitHub: GastonSoliz</p>
       {/* MAPS DE QUILMES */}
-      <form name="contact" method="POST" action="/contact">
+      <form name="contact" method="POST">
         <label>Name: </label>
         <input type="text" name="fullname" placeholder="Insert Your Name..." />
         <label>Email: </label>
