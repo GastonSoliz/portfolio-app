@@ -22,13 +22,7 @@ export default function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch("/contact", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", formData }),
-    })
-      .then(() => alert("Success!"))
-      .catch((error) => alert(error));
+    alert("Success!");
   };
 
   return (
