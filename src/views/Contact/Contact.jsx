@@ -1,4 +1,9 @@
 import { useState } from "react";
+import style from "./contact.module.css";
+import email from "../../assets/email.svg";
+import linkedin from "../../assets/linkedin.svg";
+import github from "../../assets/github.svg";
+import { Link } from "react-router-dom";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -32,29 +37,47 @@ export default function Contact() {
   };
 
   return (
-    <>
-      <h1>Contact me!</h1>
-      <p>Email: gaston.e.soliz@gmail.com</p>
-      <p>Linkedin: Gaston Soliz</p>
-      <p>GitHub: GastonSoliz</p>
+    <div className={style.contactContainer}>
+      <div className={style.redContainer}>
+        <h1>Contact me!</h1>
+        <p>
+          <img src={email} />
+          Email: gaston.e.soliz@gmail.com
+        </p>
+        <Link to="https://www.linkedin.com/in/gaston-soliz/">
+          <p>
+            <img src={linkedin} />
+            Linkedin: Gaston Soliz
+          </p>
+        </Link>
+        <Link to="https://github.com/GastonSoliz">
+          <p>
+            <img src={github} />
+            GitHub: GastonSoliz
+          </p>
+        </Link>
+      </div>
       {/* MAPS DE QUILMES */}
-      <form name="contact" method="POST" action="/contact">
+      <form
+        name="contact"
+        method="POST"
+        action="/contact"
+        className={style.formContainer}
+      >
         <input type="hidden" name="form-name" value="contact" />
-        <label>Name: </label>
-        <input type="text" name="fullname" placeholder="Insert Your Name..." />
         <label>Email: </label>
-        <input type="email" name="email" placeholder="Insert Your Email..." />
-        {/* <label>Subject: </label>
-        <input type="text" name="subject" /> */}
+        <input type="email" name="email" placeholder="Ingresa tu email..." />
+        <label>Asunto: </label>
+        <input type="text" name="subject" placeholder="Ingresa tu asunto" />
 
-        <label>Message: </label>
+        <label>Mensaje: </label>
         <textarea
           type="text"
           name="message"
-          placeholder="Insert Your Message..."
+          placeholder="Agrega tu mensaje..."
         ></textarea>
-        <button type="submit">Send Message</button>
+        <button type="submit">Enviar mensaje</button>
       </form>
-    </>
+    </div>
   );
 }
