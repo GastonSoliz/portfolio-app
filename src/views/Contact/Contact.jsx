@@ -4,19 +4,57 @@ import linkedin from "../../assets/linkedin.svg";
 import github from "../../assets/github.svg";
 import { Link } from "react-router-dom";
 import emailjs from "emailjs-com";
-import { useRef } from "react";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function Contact() {
-  const refForm = useRef();
+  function notifySuccess() {
+    toast.success("El correo se ha enviado con exito!", {
+      position: "top-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+    });
+  }
+
+  function notifyError() {
+    toast.error(
+      "El mensaje no se pudo enviar correctamente, por favor intentalo despues",
+      {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      }
+    );
+  }
 
   function sendEmail(event) {
     event.preventDefault();
-    emailjs.sendForm(
-      "service_9o5pmio",
-      "template_11u7hla",
-      event.target,
-      "nhJeYfQ2JmdxwHwn0"
-    );
+    emailjs
+      .sendForm(
+        "service_9o5pmio",
+        "template_11u7hla",
+        event.target,
+        "nhJeYfQ2JmdxwHwn0"
+      )
+      .then(
+        () => {
+          notifySuccess();
+          event.target.reset();
+          setTimeout(() => {
+            window.location.reload(false);
+          }, 3000);
+        },
+        () => {
+          notifyError();
+        }
+      );
   }
 
   return (
@@ -41,20 +79,32 @@ export default function Contact() {
         </Link>
       </div>
       {/* MAPS DE QUILMES */}
-      <form ref={refForm} onSubmit={sendEmail} className={style.formContainer}>
+      <form onSubmit={sendEmail} className={style.formContainer}>
         <label>Email: </label>
-        <input type="email" name="email" placeholder="Ingresa tu email..." />
+        <input
+          type="email"
+          name="email"
+          placeholder="Ingresa tu email..."
+          required
+        />
         <label>Asunto: </label>
-        <input type="text" name="subject" placeholder="Ingresa tu asunto" />
-
+        <input
+          type="text"
+          name="subject"
+          placeholder="Ingresa tu asunto"
+          required
+        />
         <label>Mensaje: </label>
         <textarea
           type="text"
           name="message"
           placeholder="Agrega tu mensaje..."
+          required
         ></textarea>
         <button type="submit">Enviar mensaje</button>
+        <button onClick={notifySuccess}>Notify!</button>
       </form>
+      <ToastContainer />
     </div>
   );
 }
