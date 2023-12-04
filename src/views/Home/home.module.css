@@ -35,3 +35,20 @@
   background-color: #858c74;
   color: #a0a694;
 }
+
+.photo {
+  background: linear-gradient(to bottom, #858c74, #a0a694);
+  width: 17rem;
+  height: 23rem;
+  position: absolute;
+  margin-top: 18rem;
+  border-radius: 12rem 12rem 0 0;
+}
+
+.photo img {
+  width: 41.3rem;
+  height: 23rem;
+  position: absolute;
+  left: calc(55% - 21.5rem);
+  margin-top: 4rem;
+}

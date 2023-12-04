@@ -1,6 +1,7 @@
 import style from "./home.module.css";
 import ContactButton from "../../components/ContactButton/ContactButton";
 import CV from "../../assets/Curriculum Vitae SOLIZ.pdf";
+import me from "../../assets/ProfileW.png";
 
 export default function Home() {
   return (
@@ -16,6 +17,9 @@ export default function Home() {
           <button>Descargar CV!</button>
         </a>
         <ContactButton />
+      </div>
+      <div className={style.photo}>
+        <img src={me} alt="me" />
       </div>
     </div>
   );
