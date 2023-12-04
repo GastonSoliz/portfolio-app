@@ -65,26 +65,18 @@ export default function Contact() {
           <img src={email} />
           Email: gaston.e.soliz@gmail.com
         </p>
-        <a
-          href="https://www.linkedin.com/in/gaston-soliz/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <Link to="https://www.linkedin.com/in/gaston-soliz/">
           <p>
-            <img src={linkedin} alt="LinkedIn" />
+            <img src={linkedin} />
             Linkedin: Gaston Soliz
           </p>
-        </a>
-        <a
-          href="https://github.com/GastonSoliz"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        </Link>
+        <Link to="https://github.com/GastonSoliz">
           <p>
-            <img src={github} alt="GitHub" />
+            <img src={github} />
             GitHub: GastonSoliz
           </p>
-        </a>
+        </Link>
       </div>
       {/* MAPS DE QUILMES */}
       <form onSubmit={sendEmail} className={style.formContainer}>
