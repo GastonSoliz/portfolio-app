@@ -3,19 +3,61 @@
 
   width: calc(100vw - 60px);
   height: calc(100vh - 60px);
-  padding: 30px;
-
-  justify-content: flex-end;
+  padding: 20px;
 }
 
 .leftContainer {
   margin-right: auto;
+  width: 55%;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.side {
+  height: 270px;
+  background-color: #858c74;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.side:hover {
+  border: 2px solid #a0a694;
+}
+
+.sideSkills {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 200px;
+}
+
+.sideSkills article {
+  display: flex;
+
+  gap: 0.5rem;
+
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.sideSkills img {
+  width: 25px;
+  height: 25px;
+}
+
+.sideSkills h4,
+.sideSkills small {
+  margin: 0;
 }
 
 .textContainer {
   display: flex;
   flex-direction: column;
-  width: 60%;
+  width: 45%;
   right: auto;
 
   padding: 30px;
