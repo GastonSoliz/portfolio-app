@@ -1,5 +1,6 @@
 import style from "./home.module.css";
 import ContactButton from "../../components/ContactButton/ContactButton";
+import CV from "../../assets/Curriculum Vitae SOLIZ.pdf";
 
 export default function Home() {
   return (
@@ -11,10 +12,7 @@ export default function Home() {
         PostgreSQL | Sequelize
       </h3>
       <div className={style.buttons}>
-        <a
-          href="../../assets/Curriculum Vitae SOLIZ.pdf"
-          download="Curriculum Vitae SOLIZ.pdf"
-        >
+        <a href={CV} download="Curriculum Vitae SOLIZ.pdf">
           <button>Descargar CV!</button>
         </a>
         <ContactButton />
