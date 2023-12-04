@@ -12,7 +12,7 @@ export default function Home() {
         PostgreSQL | Sequelize
       </h3>
       <div className={style.buttons}>
-        <a href={CV} download="Curriculum Vitae SOLIZ.pdf">
+        <a href={CV} download>
           <button>Descargar CV!</button>
         </a>
         <ContactButton />
