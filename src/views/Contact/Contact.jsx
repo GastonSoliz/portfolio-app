@@ -11,7 +11,7 @@ export default function Contact() {
   function notifySuccess() {
     toast.success("El correo se ha enviado con exito!", {
       position: "top-center",
-      autoClose: 5000,
+      autoClose: 3000,
       hideProgressBar: false,
       closeOnClick: true,
       pauseOnHover: true,
@@ -47,9 +47,6 @@ export default function Contact() {
         () => {
           notifySuccess();
           event.target.reset();
-          setTimeout(() => {
-            window.location.reload(false);
-          }, 3000);
         },
         () => {
           notifyError();
