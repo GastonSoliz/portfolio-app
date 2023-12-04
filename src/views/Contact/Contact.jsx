@@ -102,7 +102,6 @@ export default function Contact() {
           required
         ></textarea>
         <button type="submit">Enviar mensaje</button>
-        <button onClick={notifySuccess}>Notify!</button>
       </form>
       <ToastContainer />
     </div>
