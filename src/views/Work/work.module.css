@@ -6,9 +6,21 @@
 
   width: 100vw;
   height: 100vh;
+
+  margin-top: 50px;
 }
 
 .textContainer {
   font-size: 14px;
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  .workContainer {
+    margin-top: 130px;
+  }
+
+  .textContainer {
+    font-size: 12px;
+  }
 }

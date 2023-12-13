@@ -1,13 +1,12 @@
 .cardContainer {
   border-radius: 20px;
 
-  width: 420px;
+  width: 430px;
   height: 500px;
 
-  margin: 0px 30px;
   padding: 10px;
 
-  background-color: #56594f;
+  background-color: #fff;
 }
 
 .carrouselContainer {
@@ -19,15 +18,17 @@
 .carrouselImg {
   border-radius: 20px;
 
-  width: 350px;
+  width: 370px;
+
   height: 300px;
+  object-fit: cover;
 }
 
 .carrouselBtn {
   border-radius: 50%;
   border: none;
 
-  background-color: #56594f;
+  background-color: #fff;
 
   cursor: pointer;
 }
@@ -37,24 +38,40 @@
   height: 20px;
 }
 
+.cardContainer h2,
+h4 {
+  padding-left: 20px;
+}
+
 .btnView button {
-  background-color: #a0a694;
-  color: #858c74;
+  background-color: #fff;
 
   font-size: 15px;
   font-weight: bold;
 
-  border: 3px solid #a0a694;
+  border: none;
 
-  width: 120px;
+  width: 100%;
+  max-width: 120px;
   height: 60px;
 
   border-radius: 20px;
 
   cursor: pointer;
+
+  margin-left: 10px;
 }
 
 .btnView button:hover {
-  background-color: #858c74;
-  color: #a0a694;
+  background-color: rgb(247, 246, 246);
+}
+
+@media (max-width: 1024px) {
+  .cardContainer {
+    width: 100%;
+  }
+
+  .carrouselImg {
+    width: 85%;
+  }
 }

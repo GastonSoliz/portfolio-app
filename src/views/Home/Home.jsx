@@ -6,20 +6,20 @@ import me from "../../assets/ProfileW.png";
 export default function Home() {
   return (
     <div className={style.homeContainer}>
-      <h1>Hola! Soy Gaston Soliz</h1>
-      <h2>Desarrollador Full Stack </h2>
-      <h3>
-        HTML | CSS | Javascript | React.JS | Redux.js | Node.js | Express.js |
-        PostgreSQL | Sequelize
-      </h3>
-      <div className={style.buttons}>
-        <a href={CV} download>
-          <button>Descargar CV!</button>
-        </a>
-        <ContactButton />
-      </div>
       <div className={style.photo}>
         <img src={me} alt="me" />
+      </div>
+      <h2>Hola! Soy Gaston Soliz</h2>
+      <h2>Desarrollador Full Stack </h2>
+      <h1>
+        HTML | CSS | Javascript | React.JS | Redux.js | Node.js | Express.js |
+        PostgreSQL | Sequelize
+      </h1>
+      <div className={style.buttons}>
+        <a href={CV} download>
+          <button>Descarga mi CV!</button>
+        </a>
+        <ContactButton />
       </div>
     </div>
   );

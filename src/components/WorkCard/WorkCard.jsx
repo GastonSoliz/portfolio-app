@@ -3,6 +3,8 @@ import style from "./card.module.css";
 import { useState } from "react";
 import prev from "../../assets/left.png";
 import next from "../../assets/right.png";
+import github from "../../assets/github.svg";
+import redirect from "../../assets/redirect.svg";
 
 export default function WorkCard({ project }) {
   const [currentImage, setCurrentImage] = useState(0);
@@ -37,12 +39,17 @@ export default function WorkCard({ project }) {
       <div className={style.btnView}>
         {project.gitHub && (
           <Link to={project.gitHub}>
-            <button>GitHub</button>
+            <button>
+              GitHub
+              <img src={github} width={25} height={25} />
+            </button>
           </Link>
         )}
         {project.demo && (
           <Link to={project.demo}>
-            <button>Live Demo!</button>
+            <button>
+              Live Demo <img src={redirect} width={25} height={25} />
+            </button>
           </Link>
         )}
       </div>

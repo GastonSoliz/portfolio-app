@@ -76,31 +76,34 @@ export default function Contact() {
         </Link>
       </div>
       {/* MAPS DE QUILMES */}
-      <form onSubmit={sendEmail} className={style.formContainer}>
-        <label>Email: </label>
-        <input
-          type="email"
-          name="email"
-          placeholder="Ingresa tu email..."
-          required
-        />
-        <label>Asunto: </label>
-        <input
-          type="text"
-          name="subject"
-          placeholder="Ingresa tu asunto"
-          required
-        />
-        <label>Mensaje: </label>
-        <textarea
-          type="text"
-          name="message"
-          placeholder="Agrega tu mensaje..."
-          required
-        ></textarea>
-        <button type="submit">Enviar mensaje</button>
-      </form>
-      <ToastContainer />
+      <div className={style.formDivContainer}>
+        <h2>Mandame un mensaje a mi email!</h2>
+        <form onSubmit={sendEmail} className={style.formContainer}>
+          <label>Email: </label>
+          <input
+            type="email"
+            name="email"
+            placeholder="Ingresa tu email..."
+            required
+          />
+          <label>Asunto: </label>
+          <input
+            type="text"
+            name="subject"
+            placeholder="Ingresa tu asunto"
+            required
+          />
+          <label>Mensaje: </label>
+          <textarea
+            type="text"
+            name="message"
+            placeholder="Agrega tu mensaje..."
+            required
+          ></textarea>
+          <button type="submit">Enviar mensaje</button>
+        </form>
+        <ToastContainer />
+      </div>
     </div>
   );
 }
