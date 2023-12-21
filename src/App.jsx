@@ -5,10 +5,11 @@ import Contact from "./views/Contact/Contact";
 import Work from "./views/Work/Work";
 import About from "./views/About/About";
 import NavBar from "./components/NavBar/NavBar";
+import { LanguageProvider } from "./LanguageContext";
 
 function App() {
   return (
-    <>
+    <LanguageProvider>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
@@ -16,7 +17,7 @@ function App() {
         <Route path="/about" element={<About />} />
       </Routes>
       <NavBar className="navBar" />
-    </>
+    </LanguageProvider>
   );
 }
 
