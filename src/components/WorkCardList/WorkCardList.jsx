@@ -14,25 +14,28 @@ import photo4EP from "../../assets/EPDashboardA.png";
 import photo5EP from "../../assets/EPDashboardSA.png";
 import photo6EP from "../../assets/EPReview.png";
 
-export default function WorkCardList() {
+export default function WorkCardList({ lang }) {
   const projects = [
     {
       name: "Rick & Morty App",
-      type: "Academic Individual project",
+      typeEN: "Academic Individual project",
+      typeES: "Proyecto Individual Academico",
       gitHub: "https://github.com/GastonSoliz/RyM-App-WithServer",
       images: [photo0RM, photo1RM, photo2RM],
       demo: "",
     },
     {
       name: "Drivers App",
-      type: "Academic Individual project",
+      typeEN: "Academic Individual project",
+      typeES: "Proyecto Individual Academico",
       gitHub: "https://github.com/GastonSoliz/cr-pi-drivers-main",
       images: [photo0DR, photo1DR, photo2DR],
       demo: "",
     },
     {
       name: "Eventify App",
-      type: "Academic Group project",
+      typeEN: "Academic Group project",
+      typeES: "Proyecto Grupal Academico",
       gitHub: "https://github.com/Eventify-PF",
       images: [
         photo0EP,
@@ -50,7 +53,7 @@ export default function WorkCardList() {
   return (
     <div className={style.cardsContainer}>
       {projects.map((project) => (
-        <WorkCard project={project} />
+        <WorkCard project={project} lang={lang} key={project.name} />
       ))}
     </div>
   );

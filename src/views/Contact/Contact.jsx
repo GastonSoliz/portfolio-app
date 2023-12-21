@@ -6,8 +6,11 @@ import { Link } from "react-router-dom";
 import emailjs from "emailjs-com";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { useLanguage } from "../../LanguageContext";
 
 export default function Contact() {
+  const { lang } = useLanguage();
+
   function notifySuccess() {
     toast.success("El correo se ha enviado con exito!", {
       position: "top-center",
@@ -57,7 +60,7 @@ export default function Contact() {
   return (
     <div className={style.contactContainer}>
       <div className={style.redContainer}>
-        <h1>Contactame!</h1>
+        <h1>{lang === "es" ? "Contactame!" : "Contact me!"}</h1>
         <p>
           <img src={email} />
           Email: gaston.e.soliz@gmail.com
@@ -77,30 +80,26 @@ export default function Contact() {
       </div>
       {/* MAPS DE QUILMES */}
       <div className={style.formDivContainer}>
-        <h2>Mandame un mensaje a mi email!</h2>
+        <h2>
+          {lang === "es"
+            ? "Mandame un mensaje a mi email!"
+            : "Send me a message to my mail!"}
+        </h2>
         <form onSubmit={sendEmail} className={style.formContainer}>
-          <label>Email: </label>
-          <input
-            type="email"
-            name="email"
-            placeholder="Ingresa tu email..."
-            required
-          />
-          <label>Asunto: </label>
-          <input
-            type="text"
-            name="subject"
-            placeholder="Ingresa tu asunto"
-            required
-          />
-          <label>Mensaje: </label>
+          <label>{lang === "es" ? "Correo: " : "Mail: "}</label>
+          <input type="email" name="email" placeholder="Mail..." required />
+          <label>{lang === "es" ? "Asunto: " : "Subject: "}</label>
+          <input type="text" name="subject" placeholder="Subject..." required />
+          <label>{lang === "es" ? "Mensaje: " : "Message: "}</label>
           <textarea
             type="text"
             name="message"
-            placeholder="Agrega tu mensaje..."
+            placeholder="Message..."
             required
           ></textarea>
-          <button type="submit">Enviar mensaje</button>
+          <button type="submit">
+            {lang === "es" ? "Enviar mensaje" : "Send message"}
+          </button>
         </form>
         <ToastContainer />
       </div>

@@ -6,7 +6,7 @@ import next from "../../assets/right.png";
 import github from "../../assets/github.svg";
 import redirect from "../../assets/redirect.svg";
 
-export default function WorkCard({ project }) {
+export default function WorkCard({ project, lang }) {
   const [currentImage, setCurrentImage] = useState(0);
 
   function handlePrev() {
@@ -35,7 +35,7 @@ export default function WorkCard({ project }) {
           </button>
         )}
       </div>
-      <h4>{project.type}</h4>
+      <h4>{lang === "es" ? project.typeES : project.typeEN}</h4>
       <div className={style.btnView}>
         {project.gitHub && (
           <Link to={project.gitHub}>
