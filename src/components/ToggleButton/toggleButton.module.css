@@ -1,0 +1,51 @@
+.toggleContainer {
+  height: 80px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+.toggleContainer h2 {
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+.toggleContainer label {
+  display: flex;
+  align-items: center;
+
+  font-weight: bold;
+}
+
+.toggleInput {
+  height: 20px;
+  width: 50px;
+  background: #222;
+  appearance: none;
+
+  border-radius: 80px;
+
+  position: relative;
+  outline: none;
+  cursor: pointer;
+  transition: background 0.5s;
+}
+
+.toggleInput::before {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  background: #fff;
+  top: 0;
+  left: 0;
+  content: "";
+  border-radius: 80px;
+  transform: scale(0.9);
+  transition: 0.5s;
+}
+
+.toggleInput:checked::before {
+  transform: translateX(28px);
+}
