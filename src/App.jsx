@@ -10,13 +10,13 @@ import { LanguageProvider } from "./LanguageContext";
 function App() {
   return (
     <LanguageProvider>
+      <NavBar className="navBar" />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/work" element={<Work />} />
         <Route path="/about" element={<About />} />
       </Routes>
-      <NavBar className="navBar" />
     </LanguageProvider>
   );
 }

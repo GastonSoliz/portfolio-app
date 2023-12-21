@@ -19,7 +19,6 @@ export default function NavBar() {
 
   return (
     <div className={style.navMobile}>
-      <ToggleButton />
       <div onClick={handleBar} className={style.navMobileClose}>
         <img src={bars} width={30} height={30} />
       </div>
@@ -45,6 +44,7 @@ export default function NavBar() {
           </Link>
         </li>
       </ul>
+      <ToggleButton />
     </div>
   );
 }

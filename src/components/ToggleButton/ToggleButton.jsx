@@ -9,7 +9,7 @@ export default function ToggleButton() {
     <div className={style.toggleContainer}>
       <h2>{lang === "es" ? "Language" : "Lenguaje"}</h2>
       <label>
-        {lang === "es" ? "Spanish" : "Español"}
+        <span>{lang === "es" ? "Spanish" : "Español"}</span>
         <img src={es} width={25} height={25} />
         <input
           type="checkbox"
@@ -17,7 +17,7 @@ export default function ToggleButton() {
           className={style.toggleInput}
         />
         <img src={en} width={35} height={40} />
-        {lang === "es" ? "English" : "Ingles"}
+        <span>{lang === "es" ? "English" : "Ingles"}</span>
       </label>
     </div>
   );

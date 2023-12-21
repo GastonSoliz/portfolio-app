@@ -5,6 +5,8 @@
   flex-direction: column;
 
   align-items: center;
+
+  margin-right: 25px;
 }
 
 .toggleContainer h2 {
@@ -48,4 +50,28 @@
 
 .toggleInput:checked::before {
   transform: translateX(28px);
+}
+
+@media (max-width: 768px) {
+  .toggleContainer {
+    margin-left: auto;
+  }
+
+  .toggleContainer h2 {
+    font-size: 16px;
+  }
+
+  .toggleContainer label span {
+    display: none;
+  }
+
+  .toggleContainer label img {
+    max-height: 100%;
+  }
+}
+
+@media (max-width: 425px) {
+  .toggleContainer {
+    border: 1px solid black;
+  }
 }
