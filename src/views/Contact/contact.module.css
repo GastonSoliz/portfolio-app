@@ -39,7 +39,7 @@
 }
 
 .formContainer {
-  background-color: #858c74;
+  background-color: #fff;
 
   border: 3px solid #a0a694;
   border-radius: 20px;
@@ -59,7 +59,7 @@
   height: 35px;
 
   border-radius: 8px;
-  border: none;
+  border: 1px solid black;
 }
 
 .formContainer textarea {
@@ -69,7 +69,7 @@
   height: 175px;
 
   border-radius: 8px;
-  border: none;
+  border: 1px solid black;
 }
 
 .formContainer label {

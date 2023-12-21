@@ -49,11 +49,13 @@
 .buttons {
   display: flex;
   gap: 20px;
+  cursor: pointer;
 }
 
 .buttons button:hover {
   width: 140px;
   height: 80px;
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
