@@ -46,7 +46,7 @@ export default function WorkCardList({ lang }) {
         photo5EP,
         photo6EP,
       ],
-      demo: "https://lighthearted-entremet-b6aec9.netlify.app/",
+      demo: "",
     },
   ];
 
