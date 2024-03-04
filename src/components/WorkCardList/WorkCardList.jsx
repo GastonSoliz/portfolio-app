@@ -22,7 +22,7 @@ export default function WorkCardList({ lang }) {
       typeES: "Proyecto Individual Academico",
       gitHub: "https://github.com/GastonSoliz/RyM-App-WithServer",
       images: [photo0RM, photo1RM, photo2RM],
-      demo: "",
+      demo: "https://rickandmortyapp-gastonsolz.vercel.app/",
     },
     {
       name: "Drivers App",
