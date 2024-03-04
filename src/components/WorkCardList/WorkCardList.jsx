@@ -2,7 +2,9 @@ import WorkCard from "../WorkCard/WorkCard";
 import style from "./cardList.module.css";
 import photo0RM from "../../assets/R&MLogin.png";
 import photo1RM from "../../assets/R&MHome.png";
-import photo2RM from "../../assets/R&MFav.png";
+import photo2RM from "../../assets/R&MHome2.png";
+import photo3RM from "../../assets/R&MFav.png";
+import photo4RM from "../../assets/R&MDetail.png";
 import photo0DR from "../../assets/DRHome.png";
 import photo1DR from "../../assets/DRDetail.png";
 import photo2DR from "../../assets/DRForm.png";
@@ -21,7 +23,7 @@ export default function WorkCardList({ lang }) {
       typeEN: "Academic Individual project",
       typeES: "Proyecto Individual Academico",
       gitHub: "https://github.com/GastonSoliz/RyM-App-WithServer",
-      images: [photo0RM, photo1RM, photo2RM],
+      images: [photo0RM, photo1RM, photo2RM, photo3RM, photo4RM],
       demo: "https://rickandmortyapp-gastonsolz.vercel.app/",
     },
     {
