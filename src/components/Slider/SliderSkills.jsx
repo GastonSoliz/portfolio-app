@@ -12,8 +12,6 @@ import sequelize from "../../assets/sequelize.png";
 import postgresql from "../../assets/pgadmin.png";
 import sql from "../../assets/sql.png";
 import { useLanguage } from "../../LanguageContext";
-import CVen from "../../assets/CV Eng.pdf";
-import CVes from "../../assets/CV.pdf";
 import slack from "../../assets/slack.png";
 import git from "../../assets/git.png";
 import bash from "../../assets/bash.png";
