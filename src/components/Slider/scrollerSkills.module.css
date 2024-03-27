@@ -1,41 +1,3 @@
-/* .scrollerContainer {
-  position: relative;
-  width: 600px;
-  border: 1px solid greenyellow;
-}
-
-.scroller {
-  list-style: none;
-  white-space: nowrap;
-  display: flex;
-  animation: animate 10s linear infinite;
-}
-
-.scrollerContainer:hover .scroller {
-  animation-play-state: paused;
-}
-
-@keyframes animate {
-  0% {
-    transform: translateX(30%);
-  }
-  100% {
-    transform: translateX(100%);
-  }
-}
-
-.slide {
-  margin: 10px;
-  background: #333;
-  color: #fff;
-  padding: 5px 10px;
-  border-radius: 5px;
-}
-
-.slide:hover {
-  color: pink;
-} */
-
 .sliderContainer {
   display: flex;
   flex-direction: column;
@@ -153,12 +115,21 @@
 .buttonLink {
   cursor: pointer;
 
-  font-weight: bold;
-
   background-color: #fff;
 
   padding: 10px;
 
-  border-radius: 1rem;
+  width: 220px;
+  height: 60px;
+
+  border-radius: 20px;
+
+  font-size: 16px;
   border: none;
+}
+
+.buttonLink:hover {
+  font-weight: bold;
+  width: 240px;
+  height: 80px;
 }
