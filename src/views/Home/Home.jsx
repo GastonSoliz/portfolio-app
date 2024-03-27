@@ -1,9 +1,10 @@
 import style from "./home.module.css";
 import ContactButton from "../../components/ContactButton/ContactButton";
-import CVes from "../../assets/Curriculum Vitae SOLIZ.pdf";
-import CVen from "../../assets/Resume SOLIZ Eng.pdf";
+import CVen from "../../assets/CV Eng.pdf";
+import CVes from "../../assets/CV.pdf";
 import me from "../../assets/ProfileW.png";
 import { useLanguage } from "../../LanguageContext";
+import SliderSkills from "../../components/Slider/SliderSkills";
 
 export default function Home() {
   const { lang } = useLanguage();
@@ -35,6 +36,7 @@ export default function Home() {
         )}
         <ContactButton />
       </div>
+      <SliderSkills />
     </div>
   );
 }
