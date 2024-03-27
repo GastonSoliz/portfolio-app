@@ -1,11 +1,7 @@
 import { Link } from "react-router-dom";
 import style from "./nav.module.css";
-import home from "../../assets/home.png";
-import contact from "../../assets/contact.png";
-import work from "../../assets/work.png";
-import about from "../../assets/about.png";
 import bars from "../../assets/bars-solid.svg";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import ToggleButton from "../ToggleButton/ToggleButton";
 import { useLanguage } from "../../LanguageContext";
 
