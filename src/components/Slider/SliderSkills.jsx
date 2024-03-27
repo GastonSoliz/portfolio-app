@@ -57,27 +57,26 @@ export default function Slider() {
 
   return (
     <div className={style.sliderContainer}>
-      <h1>SKILLS & TOOLS</h1>
+      <h1>{lang === "es" ? "HABILIDADES Y HERRAMIENTAS" : "SKILLS & TOOLS"}</h1>
       <div className={style.divContainer}>
         <div className={style.textContainer}>
           <p>
-            Buenas bases en: HTML semantico,CSS, TailwindCSS, Javascript, React,
-            React Router, Renderizado condicional, Axios, React-Redux, Styled
-            Components.
+            {lang === "es"
+              ? "Buenas bases en: HTML semantico,CSS, TailwindCSS, Javascript, React, React Router, Renderizado Condicional, Axios, React-Redux, Styled Components."
+              : "Good foundation on: semantic HTML ,CSS, TailwindCSS, Javascript, React, React Router, Conditional Rendering, Axios, React-Redux, Styled Components."}
           </p>
           <br />
-          <p>Fuertes conocimientos en: Node.js / Express, Sequelize.</p>
+          <p>
+            {lang === "es"
+              ? "Fuertes conocimientos en: Node.js / Express, Sequelize."
+              : "Strong knowledge on: Node.js / Express, Sequelize. "}
+          </p>
           <br />
-          <p>Como tambien lo basico de: PostgreSQL, SQL.</p>
-          {/* {lang === "es" ? (
-          <a href={CVes} download>
-            <button>Descarga mi CV!</button>
-          </a>
-        ) : (
-          <a href={CVen} download>
-            <button>Download my resume!</button>
-          </a>
-        )} */}
+          <p>
+            {lang === "es"
+              ? "Como tambien lo basico de: PostgreSQL, SQL."
+              : "Also basics on: PostgreSQL, SQL"}
+          </p>
         </div>
         <div className={style.slider}>
           <div className={style.slider_track}>
@@ -97,20 +96,28 @@ export default function Slider() {
         </div>
         <div className={style.textContainer2}>
           <p>
-            Comunicaciones y organizaciones con: Slack y Trello
+            {lang === "es"
+              ? "Comunicacion y organizacion con: Slack y Trello"
+              : "Communicaton and organization with : Slack & Trello"}
             <br />
-            Control de versiones con: Git / Bash
+            {lang === "es"
+              ? "Control de versiones con: Git / Bash"
+              : "Version Control: Git / Bash"}
             <br />
             IDE: Visual Studio Code
             <br />
             API: Postman y Thunder Client
             <br />
-            Base de datos: PgAdmin y MySQL
+            {lang === "es"
+              ? "Base de datos: PgAdmin y MySQL"
+              : "Database: PgAdmin & MySQL"}
           </p>
         </div>
       </div>
       <Link to="/about">
-        <button className={style.buttonLink}>Mas informacion sobre mi!</button>
+        <button className={style.buttonLink}>
+          {lang === "es" ? "Mas informacion sobre mi!" : "More info about me!"}
+        </button>
       </Link>
     </div>
   );
