@@ -5,6 +5,7 @@ import CVes from "../../assets/CV.pdf";
 import me from "../../assets/ProfileW.png";
 import { useLanguage } from "../../LanguageContext";
 import SliderSkills from "../../components/Slider/SliderSkills";
+import Portfolio from "../../components/Portfolio/Portfolio";
 
 export default function Home() {
   const { lang } = useLanguage();
@@ -37,6 +38,7 @@ export default function Home() {
         <ContactButton />
       </div>
       <SliderSkills />
+      <Portfolio />
     </div>
   );
 }
