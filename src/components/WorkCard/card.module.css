@@ -9,6 +9,10 @@
   background-color: #fff;
 }
 
+.cardContainer h2 {
+  padding: 10px;
+}
+
 .carrouselContainer {
   display: flex;
   align-items: center;
