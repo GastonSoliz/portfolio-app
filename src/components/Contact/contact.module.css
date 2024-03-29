@@ -1,0 +1,125 @@
+.contactContainer {
+  display: flex;
+
+  width: 100vw;
+  height: 100vh;
+
+  justify-content: center;
+  align-items: center;
+  background-color: #f1f5f9;
+}
+
+.redContainer {
+  width: 300px;
+  height: 450px;
+
+  padding: 30px;
+  margin: 200px;
+}
+
+.redContainer p {
+  font-size: 18px;
+  font-weight: bold;
+
+  margin-top: 50px;
+}
+
+.redContainer img {
+  width: 30px;
+  height: 30px;
+}
+
+.redContainer a {
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+
+.formDivContainer {
+  margin-top: 50px;
+}
+
+.formContainer {
+  background-color: #fff;
+
+  border: none;
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+
+  width: 450px;
+
+  padding: 30px;
+}
+
+.formContainer input {
+  margin-top: 5px;
+  margin-bottom: 30px;
+
+  height: 35px;
+
+  border-radius: 8px;
+  border: 1px solid black;
+}
+
+.formContainer textarea {
+  margin-top: 5px;
+  margin-bottom: 25px;
+
+  height: 175px;
+
+  border-radius: 8px;
+  border: 1px solid black;
+}
+
+.formContainer label {
+  font-weight: bold;
+}
+
+.formContainer button {
+  width: 120px;
+  height: 45px;
+
+  border-radius: 20px;
+  border: none;
+
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .contactContainer {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 210px;
+
+    text-align: center;
+  }
+
+  .redContainer {
+    margin: 0px;
+  }
+
+  .formDivContainer {
+    width: 100%;
+
+    margin-top: 0px;
+  }
+
+  .formContainer {
+    width: 95%;
+
+    padding: 10px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1440px) {
+  .redContainer {
+    margin: 100px;
+  }
+
+  .formDivContainer {
+    margin-top: 90px;
+  }
+}
