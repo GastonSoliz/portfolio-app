@@ -5,7 +5,7 @@ export default function PortfolioCard({ project, lang }) {
 
   return (
     <div className={style.allContainer}>
-      <p>{project.description}</p>
+      <p>{lang === "es" ? project.descriptionES : project.descriptionEN}</p>
       <div className={style.cardContainer} style={cardStyle}>
         <div className={style.infoCard}>
           <h2>{project.name}</h2>
