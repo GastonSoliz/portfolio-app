@@ -18,7 +18,11 @@ export default function Work() {
       </div>
       <PortfolioCardList lang={lang} />
       <Link>
-        <button>Mas informacion sobre mi portfolio!</button>
+        <button>
+          {lang === "es"
+            ? "Mas informacion sobre mi trabajo!"
+            : "More info about my portfolio"}
+        </button>
       </Link>
     </div>
   );
