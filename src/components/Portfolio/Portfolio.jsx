@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { useLanguage } from "../../LanguageContext";
-import WorkCardList from "../WorkCardList/WorkCardList";
+import PortfolioCardList from "../PortfolioCardList/PortfolioCardList";
 import style from "./portfolio.module.css";
 
 export default function Work() {
@@ -16,7 +16,7 @@ export default function Work() {
             : "Here you can see the projects i have been working on my own or as part of a team."}
         </h2>
       </div>
-      <WorkCardList lang={lang} />
+      <PortfolioCardList lang={lang} />
       <Link to="/work">
         <button>
           {lang === "es"
