@@ -42,15 +42,15 @@ export default function Slider() {
   const slides = [...images, ...images, ...images];
 
   const images2 = [
-    slack,
-    git,
-    bash,
-    trello,
-    vsc,
-    postgresql,
-    mysql,
-    postman,
-    tc,
+    { tech: slack, name: "Slack" },
+    { tech: git, name: "GIT" },
+    { tech: bash, name: "Bash" },
+    { tech: trello, name: "Trello" },
+    { tech: vsc, name: "VSC" },
+    { tech: postgresql, name: "PgAdmin" },
+    { tech: mysql, name: "MySQL" },
+    { tech: postman, name: "Postman" },
+    { tech: tc, name: "Thunder Client" },
   ];
 
   const slides2 = [...images2, ...images2, ...images2, ...images2];
@@ -93,7 +93,10 @@ export default function Slider() {
         <div className={style.slider}>
           <div className={style.slider_track2}>
             {slides2.map((slide, index) => (
-              <img className={style.slide} src={slide} key={index} />
+              <div className={style.slideContainer} key={index}>
+                <img className={style.slide} src={slide.tech} />
+                <span className={style.slideName}>{slide.name}</span>
+              </div>
             ))}
           </div>
         </div>
