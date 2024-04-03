@@ -32,6 +32,7 @@
 }
 
 .workContainer button:hover {
+  transition: 0.3s ease;
   font-weight: bold;
   width: 240px;
   height: 80px;
