@@ -60,6 +60,11 @@ export default function NavBar() {
               {lang === "es" ? "Sobre mi" : "About me"}
             </Link>
           </li>
+          <li>
+            <Link to="/contact" onClick={handleBar}>
+              {lang === "es" ? "Contacto" : "Contact"}
+            </Link>
+          </li>
         </ul>
       )}
       <ToggleButton />
