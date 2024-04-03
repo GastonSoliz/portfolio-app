@@ -8,9 +8,12 @@
 
   font-size: 16px;
   border: none;
+
+  cursor: pointer;
 }
 
 .contactBtnContainer button:hover {
-  width: 140px;
-  height: 80px;
+  transition: 0.3s ease;
+  width: 130px;
+  height: 70px;
 }
