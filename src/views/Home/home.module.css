@@ -34,6 +34,12 @@
   object-position: center top;
 }
 
+.buttons {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+
 .buttons button {
   width: 120px;
   height: 60px;
@@ -45,19 +51,14 @@
   background-color: #fff;
 
   font-size: 15px;
-}
 
-.buttons {
-  display: flex;
-  gap: 20px;
   cursor: pointer;
-  margin-bottom: 10px;
 }
 
 .buttons button:hover {
-  width: 140px;
-  height: 80px;
-  cursor: pointer;
+  transition: 0.3s ease;
+  width: 130px;
+  height: 70px;
 }
 
 @media (max-width: 768px) {
