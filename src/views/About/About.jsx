@@ -3,6 +3,7 @@ import style from "./about.module.css";
 import experience from "../../assets/experience.png";
 import html from "../../assets/html.png";
 import css from "../../assets/css.png";
+import tailwind from "../../assets/tailwind.png";
 import javascript from "../../assets/js.png";
 import react from "../../assets/react.png";
 import next from "../../assets/next.png";
@@ -11,17 +12,26 @@ import node from "../../assets/node.png";
 import express from "../../assets/express.png";
 import sequelize from "../../assets/sequelize.png";
 import postgresql from "../../assets/pgadmin.png";
+import sql from "../../assets/sql.png";
 import { useLanguage } from "../../LanguageContext";
+import slack from "../../assets/slack.png";
+import git from "../../assets/git.png";
+import bash from "../../assets/bash.png";
+import trello from "../../assets/trello.png";
+import vsc from "../../assets/vsc.png";
+import mysql from "../../assets/mysql.png";
+import postman from "../../assets/postman.png";
+import tc from "../../assets/tc.png";
 
 export default function About() {
   const { lang } = useLanguage();
   const text = {
     titleES: "Sobre mi!",
     titleEN: "About me!",
-    sideFES: "Desarrollo Front-end",
-    sideFEN: "Front-end Development",
-    sideBES: "Desarrollo Back-end",
-    sideBEN: "Back-end Developmet",
+    sideDES: "Desarrollo Front-end / Back end",
+    sideDEN: "Front-end / Back end Development",
+    sideTES: "Herramientas",
+    sideTEN: "Tools",
     bES: "Basico",
     bEN: "Basic",
     iES: "Intermedio",
@@ -41,7 +51,7 @@ export default function About() {
         <h1>{lang === "es" ? text.titleES : text.titleEN}</h1>
         <div className={style.skills}>
           <div className={style.side}>
-            <h2>{lang === "es" ? text.sideFES : text.sideFEN}</h2>
+            <h2>{lang === "es" ? text.sideDES : text.sideDEN}</h2>
             <div className={style.sideSkills}>
               <article>
                 <img src={html} />
@@ -54,6 +64,13 @@ export default function About() {
                 <img src={css} />
                 <div>
                   <h4>CSS</h4>
+                  <small>{lang === "es" ? text.bES : text.bEN}</small>
+                </div>
+              </article>
+              <article>
+                <img src={tailwind} />
+                <div>
+                  <h4>TailwindCSS</h4>
                   <small>{lang === "es" ? text.bES : text.bEN}</small>
                 </div>
               </article>
@@ -85,16 +102,11 @@ export default function About() {
                   <small>{lang === "es" ? text.bES : text.bEN}</small>
                 </div>
               </article>
-            </div>
-          </div>
-          <div className={style.side}>
-            <h2>{lang === "es" ? text.sideBES : text.sideBEN}</h2>
-            <div className={style.sideSkills}>
               <article>
                 <img src={node} />
                 <div>
                   <h4>Node.js</h4>
-                  <small>{lang === "es" ? text.bES : text.bEN}</small>
+                  <small>{lang === "es" ? text.iES : text.iEN}</small>
                 </div>
               </article>
               <article>
@@ -115,6 +127,74 @@ export default function About() {
                 <img src={postgresql} />
                 <div>
                   <h4>PostgreSQL</h4>
+                  <small>{lang === "es" ? text.bES : text.bEN}</small>
+                </div>
+              </article>
+              <article>
+                <img src={sql} />
+                <div>
+                  <h4>SQL</h4>
+                  <small>{lang === "es" ? text.bES : text.bEN}</small>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div className={style.side}>
+            <h2>{lang === "es" ? text.sideTES : text.sideTEN}</h2>
+            <div className={style.sideSkills}>
+              <article>
+                <img src={slack} />
+                <div>
+                  <h4>Slack</h4>
+                  <small>{lang === "es" ? text.bES : text.bEN}</small>
+                </div>
+              </article>
+              <article>
+                <img src={git} />
+                <div>
+                  <h4>GIT</h4>
+                  <small>{lang === "es" ? text.iES : text.iEN}</small>
+                </div>
+              </article>
+              <article>
+                <img src={bash} />
+                <div>
+                  <h4>Bash</h4>
+                  <small>{lang === "es" ? text.iES : text.iEN}</small>
+                </div>
+              </article>
+              <article>
+                <img src={trello} />
+                <div>
+                  <h4>Trello</h4>
+                  <small>{lang === "es" ? text.bES : text.bEN}</small>
+                </div>
+              </article>
+              <article>
+                <img src={vsc} />
+                <div>
+                  <h4>Visual Studio Code</h4>
+                  <small>{lang === "es" ? text.iES : text.iEN}</small>
+                </div>
+              </article>
+              <article>
+                <img src={mysql} />
+                <div>
+                  <h4>MySQL</h4>
+                  <small>{lang === "es" ? text.bES : text.bEN}</small>
+                </div>
+              </article>
+              <article>
+                <img src={postman} />
+                <div>
+                  <h4>Postman</h4>
+                  <small>{lang === "es" ? text.bES : text.bEN}</small>
+                </div>
+              </article>
+              <article>
+                <img src={tc} />
+                <div>
+                  <h4>Thunder Client</h4>
                   <small>{lang === "es" ? text.bES : text.bEN}</small>
                 </div>
               </article>
