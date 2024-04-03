@@ -26,18 +26,18 @@ export default function Slider() {
   const { lang } = useLanguage();
 
   const images = [
-    html,
-    css,
-    tailwind,
-    js,
-    react,
-    next,
-    redux,
-    node,
-    express,
-    sequelize,
-    postgresql,
-    sql,
+    { tech: html, name: "HTML" },
+    { tech: css, name: "CSS" },
+    { tech: tailwind, name: "TailwindCSS" },
+    { tech: js, name: "Javascript" },
+    { tech: react, name: "ReactJS" },
+    { tech: next, name: "NextJS" },
+    { tech: redux, name: "Redux" },
+    { tech: node, name: "NodeJS" },
+    { tech: express, name: "Express" },
+    { tech: sequelize, name: "Sequelize" },
+    { tech: postgresql, name: "PostgreSQL" },
+    { tech: sql, name: "SQL" },
   ];
   const slides = [...images, ...images, ...images];
 
@@ -81,7 +81,10 @@ export default function Slider() {
         <div className={style.slider}>
           <div className={style.slider_track}>
             {slides.map((slide, index) => (
-              <img className={style.slide} src={slide} key={index} />
+              <div className={style.slideContainer} key={index}>
+                <img className={style.slide} src={slide.tech} />
+                <span className={style.slideName}>{slide.name}</span>
+              </div>
             ))}
           </div>
         </div>
