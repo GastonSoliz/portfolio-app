@@ -15,6 +15,14 @@ import photo3EP from "../../assets/EPUser.png";
 import photo4EP from "../../assets/EPDashboardA.png";
 import photo5EP from "../../assets/EPDashboardSA.png";
 import photo6EP from "../../assets/EPReview.png";
+import js from "../../assets/js.png";
+import react from "../../assets/react.png";
+import css from "../../assets/css.png";
+import tailwind from "../../assets/tailwind.png";
+import next from "../../assets/next.png";
+import node from "../../assets/node.png";
+import express from "../../assets/express.png";
+import postgresql from "../../assets/pgadmin.png";
 
 export default function WorkCardList({ lang }) {
   const projects = [
@@ -22,7 +30,14 @@ export default function WorkCardList({ lang }) {
       name: "Rick & Morty App",
       typeEN: "Academic Individual project",
       typeES: "Proyecto Individual Academico",
+      descriptionEN:
+        "Application web that extracts data about characters of Rick & Morty series from the API: https://rickandmortyapi.com/ . A registration and login from database, navigation bar, character carousel, favourites section, search filters were implemented.",
+      descriptionES:
+        "Aplicacion web que extrae informacion sobre personajes de la serie Rick & Morty desde la API: https://rickandmortyapi.com/ . Se implemento un registro e inicio de sesion desde una base de datos, Barra de navegacion, Carrousel de personajes, Seccion de favoritos, Filtros de busqueda. Se utilizo el entorno de desarrollo: Create React App",
       gitHub: "https://github.com/GastonSoliz/RyM-App-WithServer",
+      prevEN: "Important technologies used:",
+      prevES: "Tecnologias importantes usadas:",
+      tech: [js, react, css, node, express, postgresql],
       images: [photo0RM, photo1RM, photo2RM, photo3RM, photo4RM],
       demo: "https://rickandmortyapp-gastonsolz.vercel.app/",
     },
@@ -30,6 +45,12 @@ export default function WorkCardList({ lang }) {
       name: "Drivers App",
       typeEN: "Academic Individual project",
       typeES: "Proyecto Individual Academico",
+      descriptionEN: "sdhadfasfdjkhadfhjkadsfjkasdjfkhjkadsfhjka",
+      descriptionES:
+        "Drivers API se realizo para extraer datos de una API local que contenia informacion de Corredores de la Formula 1, incluidos sus equipos (los cuales se guardaron en la base de datos), el proposito de esta aplicacion fue realizar un CRUD completo, visible barra de navegacion, filtros de busqueda. Se utilizo el entorno de desarrollo: Vite.js",
+      prevEN: "Important technologies used:",
+      prevES: "Tecnologias importantes usadas:",
+      tech: [js, react, css, node, express, postgresql],
       gitHub: "https://github.com/GastonSoliz/cr-pi-drivers-main",
       images: [photo0DR, photo1DR, photo2DR],
       demo: "",
@@ -38,6 +59,12 @@ export default function WorkCardList({ lang }) {
       name: "Eventify App",
       typeEN: "Academic Group project",
       typeES: "Proyecto Grupal Academico",
+      descriptionEN: "sdhadfasfdjkhadfhjkadsfjkasdjfkhjkadsfhjka",
+      descriptionES:
+        "Este proyecto `EventifyPro` es un E-Commerce para vender eventos, se implemento un registro y login con Autenticacion Auth0, Dashboard de Admin y SuperAdmin, Pasarela de pagos con carrito, Carrousel de Eventos, CRUD completo de Eventos y Usuario, Filtro de busqueda de eventos, Reseñas. Se utilizo el entorno de desarrollo: Next.js",
+      prevEN: "Important technologies used:",
+      prevES: "Tecnologias importantes usadas:",
+      tech: [js, next, tailwind, node, express, postgresql],
       gitHub: "https://github.com/Eventify-PF",
       images: [
         photo0EP,
