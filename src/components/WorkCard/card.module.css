@@ -1,16 +1,17 @@
 .cardContainer {
+  display: flex;
+
   border-radius: 20px;
 
-  width: 430px;
-  height: 520px;
-
-  padding: 10px;
+  width: 95%;
+  height: 330px;
 
   background-color: #fff;
 }
 
-.cardContainer h2 {
-  padding: 10px;
+.leftSide {
+  border-right: 1px solid gray;
+  width: 40%;
 }
 
 .carrouselContainer {
@@ -22,9 +23,9 @@
 .carrouselImg {
   border-radius: 20px;
 
-  width: 370px;
+  width: 500px;
+  height: 250px;
 
-  height: 300px;
   object-fit: cover;
 }
 
@@ -47,6 +48,36 @@ h4 {
   padding-left: 20px;
 }
 
+.rightSide {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.topSide {
+  height: 80%;
+  padding-left: 10px;
+}
+
+.topSide img {
+  width: 50px;
+  margin: 0 5px;
+}
+
+.bottomSide {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid gray;
+  width: 100%;
+}
+
+.btnView {
+  display: flex;
+  margin-left: auto;
+  margin-right: 15px;
+}
+
 .btnView button {
   background-color: #fff;
 
@@ -63,7 +94,7 @@ h4 {
 
   cursor: pointer;
 
-  margin-left: 10px;
+  margin-left: 15px;
 }
 
 .btnView button:hover {
