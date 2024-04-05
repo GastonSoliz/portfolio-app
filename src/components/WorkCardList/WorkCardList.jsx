@@ -31,7 +31,7 @@ export default function WorkCardList({ lang }) {
       typeEN: "Academic Individual project",
       typeES: "Proyecto Individual Academico",
       descriptionEN:
-        "Application web that extracts data about characters of Rick & Morty series from the API: https://rickandmortyapi.com/ . A registration and login from database, navigation bar, character carousel, favourites section, search filters were implemented.",
+        "Application web that extracts data about characters of Rick & Morty series from the API: https://rickandmortyapi.com/ . A registration and login from database, navigation bar, character carousel, favourites section, search filters were implemented. The development environment used were: Create React App",
       descriptionES:
         "Aplicacion web que extrae informacion sobre personajes de la serie Rick & Morty desde la API: https://rickandmortyapi.com/ . Se implemento un registro e inicio de sesion desde una base de datos, Barra de navegacion, Carrousel de personajes, Seccion de favoritos, Filtros de busqueda. Se utilizo el entorno de desarrollo: Create React App",
       gitHub: "https://github.com/GastonSoliz/RyM-App-WithServer",
@@ -45,7 +45,8 @@ export default function WorkCardList({ lang }) {
       name: "Drivers App",
       typeEN: "Academic Individual project",
       typeES: "Proyecto Individual Academico",
-      descriptionEN: "sdhadfasfdjkhadfhjkadsfjkasdjfkhjkadsfhjka",
+      descriptionEN:
+        "Drivers API was made to extract data from a local API what contains information about Formula 1 Drivers, it includes their teams (which were saved in database), the purpose of this aplication was to make a complete CRUD, navigation bar, search filters. The development environment used were: Vite.js",
       descriptionES:
         "Drivers API se realizo para extraer datos de una API local que contenia informacion de Corredores de la Formula 1, incluidos sus equipos (los cuales se guardaron en la base de datos), el proposito de esta aplicacion fue realizar un CRUD completo, visible barra de navegacion, filtros de busqueda. Se utilizo el entorno de desarrollo: Vite.js",
       prevEN: "Important technologies used:",
@@ -59,9 +60,10 @@ export default function WorkCardList({ lang }) {
       name: "Eventify App",
       typeEN: "Academic Group project",
       typeES: "Proyecto Grupal Academico",
-      descriptionEN: "sdhadfasfdjkhadfhjkadsfjkasdjfkhjkadsfhjka",
+      descriptionEN:
+        "The `EventifyPro` project is an E-Commerce to sell events, a registration and login with Auth0 Authentication, Admin and SuperAdmin Dashboard, Payment Gateway from MercadoPago with Cart, Event Carrousel, complete CRUD of Events and User, Search filters of Events, Reviews were implemented. The development environment used were: Next.js",
       descriptionES:
-        "Este proyecto `EventifyPro` es un E-Commerce para vender eventos, se implemento un registro y login con Autenticacion Auth0, Dashboard de Admin y SuperAdmin, Pasarela de pagos con carrito, Carrousel de Eventos, CRUD completo de Eventos y Usuario, Filtro de busqueda de eventos, Reseñas. Se utilizo el entorno de desarrollo: Next.js",
+        "El proyecto `EventifyPro` es un E-Commerce para vender eventos, se implemento un registro y login con Autenticacion Auth0, Dashboard de Admin y SuperAdmin, Pasarela de pagos de MercadoPago con carrito , Carrousel de Eventos, CRUD completo de Eventos y Usuario, Filtro de busqueda de eventos, Reseñas. Se utilizo el entorno de desarrollo: Next.js",
       prevEN: "Important technologies used:",
       prevES: "Tecnologias importantes usadas:",
       tech: [js, next, tailwind, node, express, postgresql],
