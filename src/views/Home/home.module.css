@@ -53,6 +53,8 @@
   font-size: 15px;
 
   cursor: pointer;
+
+  transition: 0.3s ease;
 }
 
 .buttons button:hover {
