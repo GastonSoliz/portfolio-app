@@ -54,7 +54,7 @@ export default function WorkCardList({ lang }) {
       tech: [js, react, css, node, express, postgresql],
       gitHub: "https://github.com/GastonSoliz/cr-pi-drivers-main",
       images: [photo0DR, photo1DR, photo2DR],
-      demo: "",
+      demo: "https://cr-pi-drivers-main-beta.vercel.app/",
     },
     {
       name: "Eventify App",
