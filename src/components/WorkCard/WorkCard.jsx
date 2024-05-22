@@ -39,10 +39,10 @@ export default function WorkCard({ project, lang }) {
       </div>
       <div className={style.rightSide}>
         <div className={style.topSide}>
-          <h3>
+          <p>
             {lang === "es" ? project.descriptionES : project.descriptionEN}
-          </h3>
-          <h3>{lang === "es" ? project.prevES : project.prevEN}</h3>
+          </p>
+          <p>{lang === "es" ? project.prevES : project.prevEN}</p>
           {project.tech.map((t, index) => (
             <img src={t} key={index} />
           ))}
@@ -51,19 +51,19 @@ export default function WorkCard({ project, lang }) {
           <h4>{lang === "es" ? project.typeES : project.typeEN}</h4>
           <div className={style.btnView}>
             {project.gitHub && (
-              <Link to={project.gitHub}>
+              <a href={project.gitHub} target="_blank">
                 <button>
                   GitHub
                   <img src={github} width={25} height={25} />
                 </button>
-              </Link>
+              </a>
             )}
             {project.demo && (
-              <Link to={project.demo}>
+              <a href={project.demo} target="_blank">
                 <button>
                   Live Demo <img src={redirect} width={25} height={25} />
                 </button>
-              </Link>
+              </a>
             )}
           </div>
         </div>
