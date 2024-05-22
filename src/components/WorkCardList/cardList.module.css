@@ -1,15 +1,11 @@
 .cardsContainer {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
   align-items: center;
-
-  width: 100vw;
-  height: auto;
 
   gap: 20px;
 
-  padding: 20px;
+  padding: 20px 0;
 }
 
 @media (max-width: 768px) {
