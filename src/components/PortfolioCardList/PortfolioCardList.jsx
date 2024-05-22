@@ -26,15 +26,15 @@ export default function PortfolioCardList({ lang }) {
         "Operaciones CRUD sobre corredores, con filtros de busqueda",
       descriptionEN: "CRUD operation about drivers with search filters",
     },
-    {
-      name: "Eventify App",
-      images: photo0EP,
-      tech: [next, node],
-      descriptionES:
-        "E-Commerce completo sobre Eventos, que incluye: Pasarela de pagos, Login, Autenticacion de usuario, Panel de configuracion, Reseñas, Filtros de busqueda",
-      descriptionEN:
-        "Complete E-Commerce about Events, it includes: Payment gateway, Login, User Authentication, Dashboard, Reviews, Search filters",
-    },
+    // {
+    //   name: "Eventify App",
+    //   images: photo0EP,
+    //   tech: [next, node],
+    //   descriptionES:
+    //     "E-Commerce completo sobre Eventos, que incluye: Pasarela de pagos, Login, Autenticacion de usuario, Panel de configuracion, Reseñas, Filtros de busqueda",
+    //   descriptionEN:
+    //     "Complete E-Commerce about Events, it includes: Payment gateway, Login, User Authentication, Dashboard, Reviews, Search filters",
+    // },
   ];
 
   return (
