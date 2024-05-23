@@ -1,12 +1,8 @@
 .aboutContainer {
   display: flex;
 
-  width: calc(100vw - 60px);
-  height: calc(100vh - 60px);
-
-  padding: 20px;
-
-  margin-top: 50px;
+  padding: 0 20px 20px;
+  box-sizing: border-box;
 }
 
 .leftContainer {
@@ -20,40 +16,34 @@
 }
 
 .side {
-  height: 270px;
+  height: 100%;
   background-color: #fff;
   text-align: center;
   border-radius: 20px;
 }
 
-.side:hover {
-  border: 2px solid #a0a694;
-}
-
 .sideSkills {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  height: 200px;
+  padding: 20px 0;
 }
 
 .sideSkills article {
   display: flex;
-
-  gap: 0.5rem;
-
   justify-content: center;
-  align-items: center;
-  text-align: center;
+  margin: .5rem;
 }
 
 .sideSkills img {
   width: 25px;
   height: 25px;
+  margin-right: .3rem;
 }
 
-.sideSkills h4,
+.sideSkills p,
 .sideSkills small {
   margin: 0;
+  font-weight: bold;
 }
 
 .textContainer {
