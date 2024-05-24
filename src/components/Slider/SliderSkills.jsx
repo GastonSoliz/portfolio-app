@@ -1,11 +1,13 @@
 import style from "./scrollerSkills.module.css";
 import html from "../../assets/html.png";
 import css from "../../assets/css.png";
+import bootstrap from "../../assets/bootstrap.png"
 import tailwind from "../../assets/tailwind.png";
 import js from "../../assets/js.png";
 import react from "../../assets/react.png";
 import next from "../../assets/next.png";
 import redux from "../../assets/redux.png";
+import typescript from "../../assets/typescript.png"
 import node from "../../assets/node.png";
 import express from "../../assets/express.png";
 import sequelize from "../../assets/sequelize.png";
@@ -28,8 +30,10 @@ export default function Slider() {
   const images = [
     { tech: html, name: "HTML" },
     { tech: css, name: "CSS" },
+    { tech: bootstrap, name: "Bootstrap"},
     { tech: tailwind, name: "TailwindCSS" },
     { tech: js, name: "Javascript" },
+    { tech: typescript, name: "Typescript"},
     { tech: react, name: "ReactJS" },
     { tech: next, name: "NextJS" },
     { tech: redux, name: "Redux" },
