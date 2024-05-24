@@ -20,8 +20,8 @@ export default function Work() {
       <Link to="/work">
         <button>
           {lang === "es"
-            ? "Mas informacion sobre mi trabajo!"
-            : "More info about my portfolio"}
+            ? "Conoce mas proyectos aqui!"
+            : "Learn about more project here!"}
         </button>
       </Link>
     </div>

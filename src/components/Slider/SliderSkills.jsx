@@ -39,6 +39,7 @@ export default function Slider() {
     { tech: postgresql, name: "PostgreSQL" },
     { tech: sql, name: "SQL" },
   ];
+  
   const slides = [...images, ...images, ...images];
 
   const images2 = [
@@ -59,7 +60,7 @@ export default function Slider() {
     <div className={style.sliderContainer}>
       <h1>{lang === "es" ? "HABILIDADES Y HERRAMIENTAS" : "SKILLS & TOOLS"}</h1>
       <div className={style.divContainer}>
-        {/* <div className={style.textContainer}>
+        <div className={style.textContainer}>
           <p>
             {lang === "es"
               ? "Buenas bases en: HTML semantico,CSS, TailwindCSS, Javascript, React, React Router, Renderizado Condicional, Axios, React-Redux, Styled Components."
@@ -77,7 +78,7 @@ export default function Slider() {
               ? "Como tambien lo basico de: PostgreSQL, SQL."
               : "Also basics on: PostgreSQL, SQL"}
           </p>
-        </div> */}
+        </div>
         <div className={style.slider}>
           <div className={style.slider_track}>
             {slides.map((slide, index) => (
@@ -100,7 +101,7 @@ export default function Slider() {
             ))}
           </div>
         </div>
-        {/* <div className={style.textContainer2}>
+        <div className={style.textContainer2}>
           <p>
             {lang === "es"
               ? "Comunicacion y organizacion con: Slack y Trello"
@@ -118,11 +119,13 @@ export default function Slider() {
               ? "Base de datos: PgAdmin y MySQL"
               : "Database: PgAdmin & MySQL"}
           </p>
-        </div> */}
+        </div>
       </div>
       <Link to="/about">
         <button className={style.buttonLink}>
-          {lang === "es" ? "Mas informacion sobre mi!" : "More info about me!"}
+          {lang === "es" 
+          ? "Más información sobre mis conocimientos!" 
+          : "More info about my knowledge!"}
         </button>
       </Link>
     </div>

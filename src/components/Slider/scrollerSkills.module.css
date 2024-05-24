@@ -3,35 +3,32 @@
   flex-direction: column;
   gap: 100px;
   width: 100%;
-  height: 100vb;
+  height: 100%;
   align-items: center;
   background: #f1f5f9;
 
   padding: 50px 0;
-
 }
 
 .divContainer {
   display: flex;
+  width: 100%;
 }
 
 .textContainer {
-  border: black 1px solid;
   background-color: #fff;
   font-weight: bold;
 
+  width:50%;
+
   border-radius: 1rem;
-  margin-left: 250px;
 
-  flex-direction: column;
-  justify-content: center;
-  position: relative;
-
-  padding: 20px;
+  margin-left: 1rem;
+  padding: 1.2rem 2rem;
 }
 
 .textContainer p {
-  margin-bottom: auto;
+  margin:0;
 }
 
 .textContainer button {
@@ -44,14 +41,14 @@
   background-color: #fff;
   font-weight: bold;
   border-radius: 1rem;
-  margin-right: 650px;
+  margin-right: 1rem;
   padding: 20px;
 
   width: 500px;
 }
 
 .textContainer2 p {
-  margin-bottom: auto; /* Empuja el párrafo hacia arriba para centrarlo verticalmente */
+  margin-bottom: auto; 
 }
 
 .textContainer2 button {
@@ -129,7 +126,7 @@
 
 @keyframes scroll2 {
   0% {
-    transform: translateX(20%);
+    transform: translateX(0%);
   }
   100% {
     transform: translateX(-50%);
@@ -141,26 +138,21 @@
 }
 
 .buttonLink {
-  cursor: pointer;
-
-  background-color: #fff;
-
-  padding: 10px;
-
-  width: 220px;
-  height: 60px;
-
-  border-radius: 20px;
-
-  font-size: 16px;
+  max-width: 230px;
+  padding: 0.5rem;  
+  border-radius: 10px;
   border: none;
+  background-color: #030a8c;
 
+  font-size: 15px;
+  font-weight: bold;
+  color: #f7f6f6;
+
+  cursor: pointer;
   transition: 0.3s ease;
 }
 
 .buttonLink:hover {
   transition: 0.3s ease;
-  font-weight: bold;
-  width: 240px;
-  height: 80px;
+  transform: scale(1.1);
 }
