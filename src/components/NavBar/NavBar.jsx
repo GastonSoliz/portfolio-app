@@ -33,9 +33,9 @@ export default function NavBar() {
             </a>
           </li>
           <li>
-            <Link to="/about" onClick={handleBar}>
+            <a href="#skills" onClick={handleBar}>
               {lang === "es" ? "Sobre mi" : "About me"}
-            </Link>
+            </a>
           </li>
           <li>
             <a href="#contact" onClick={handleBar}>
