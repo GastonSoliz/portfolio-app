@@ -18,8 +18,10 @@ import photo6EP from "../../assets/EPReview.png";
 import js from "../../assets/js.png";
 import react from "../../assets/react.png";
 import css from "../../assets/css.png";
+import bootstrap from "../../assets/bootstrap.png"
 import tailwind from "../../assets/tailwind.png";
 import next from "../../assets/next.png";
+import typescript from "../../assets/typescript.png"
 import node from "../../assets/node.png";
 import express from "../../assets/express.png";
 import postgresql from "../../assets/pgadmin.png";
@@ -51,7 +53,7 @@ export default function WorkCardList({ lang }) {
         "Drivers API se realizo para extraer datos de una API local que contenia informacion de Corredores de la Formula 1, incluidos sus equipos (los cuales se guardaron en la base de datos), el proposito de esta aplicacion fue realizar un CRUD completo, visible barra de navegacion, filtros de busqueda. Se utilizo el entorno de desarrollo: Vite.js",
       prevEN: "Important technologies used:",
       prevES: "Tecnologias importantes usadas:",
-      tech: [js, react, css, node, express, postgresql],
+      tech: [typescript, react, bootstrap, node, express, postgresql],
       gitHub: "https://github.com/GastonSoliz/cr-pi-drivers-main",
       images: [photo0DR, photo1DR, photo2DR],
       demo: "https://cr-pi-drivers-main-beta.vercel.app/",
