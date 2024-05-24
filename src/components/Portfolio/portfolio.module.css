@@ -16,7 +16,7 @@
 }
 
 .workContainer button {
-  cursor: pointer;
+  /* cursor: pointer;
 
   background-color: #fff;
 
@@ -30,14 +30,28 @@
   font-size: 16px;
   border: none;
 
+  transition: 0.3s ease; */
+  max-width: 220px;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  background-color: #030a8c;
+
+  font-size: 15px;
+  font-weight: bold;
+  color: #f7f6f6;
+
+  cursor: pointer;
   transition: 0.3s ease;
 }
 
 .workContainer button:hover {
   transition: 0.3s ease;
-  font-weight: bold;
+  transform: scale(1.1);
+
+  /* font-weight: bold;
   width: 240px;
-  height: 80px;
+  height: 80px; */
 }
 
 @media (max-width: 768px) {
