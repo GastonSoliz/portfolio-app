@@ -61,10 +61,12 @@ export default function Contact() {
     <div className={style.contactContainer}>
       <div className={style.redContainer}>
         <h1>{lang === "es" ? "Contactame!" : "Contact me!"}</h1>
-        <p>
-          <img src={email} />
-          Email: gaston.e.soliz@gmail.com
-        </p>
+        <a href="mailto:gaston.e.soliz@gmail.com">
+          <p>
+            <img src={email} />
+            Email: gaston.e.soliz@gmail.com
+          </p>
+        </a>
         <Link to="https://www.linkedin.com/in/gaston-soliz/">
           <p>
             <img src={linkedin} />
@@ -87,14 +89,22 @@ export default function Contact() {
         </h2>
         <form onSubmit={sendEmail} className={style.formContainer}>
           <label>{lang === "es" ? "Correo: " : "Mail: "}</label>
-          <input type="email" name="email" placeholder="Mail..." required />
+          <input 
+          type="email" 
+          name="email" 
+          placeholder={lang === "es" ? "ejemplo@mail.com" : "example@mail.com"} 
+          required />
           <label>{lang === "es" ? "Asunto: " : "Subject: "}</label>
-          <input type="text" name="subject" placeholder="Subject..." required />
+          <input 
+          type="text" 
+          name="subject" 
+          placeholder={lang === "es" ? "Oportunidad de empleo" : "Job Opportunity"} 
+          required />
           <label>{lang === "es" ? "Mensaje: " : "Message: "}</label>
           <textarea
             type="text"
             name="message"
-            placeholder="Message..."
+            placeholder={lang==="es"?"Buen dia, me presento...":"Good morning, i introduced myself..."}
             required
           ></textarea>
           <button type="submit">
