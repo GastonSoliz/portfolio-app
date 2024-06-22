@@ -4,12 +4,11 @@
   border-radius: 20px;
 
   width: 95%;
+  height: 100%;
 
-  background-color: #fff;
 }
 
 .leftSide {
-  border-right: 1px solid gray;
   width: 40%;
   height: auto;
 }
@@ -70,14 +69,29 @@ h4 {
 
 .topSide {
   height: 80%;
-  padding: 5px 15px;
+  padding: 30px 15px 0;
 }
+
+/* .topSide h4{
+  padding: 0;
+  color: #030a8c;
+} */
 
 .topSide p{
   font-weight:bold;
 }
 
-.topSide img {
+.techSide h4{
+  padding: 0 15px;
+  color: #030a8c;
+
+}
+
+.bottomTech{
+  padding: 0 15px;
+}
+
+.techImg {
   width: 5%;
   margin: 0 5px;
 }
@@ -85,8 +99,7 @@ h4 {
 .bottomSide {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  border-top: 1px solid gray;
+  align-items:end;
   width: 100%;
 }
 
@@ -96,7 +109,18 @@ h4 {
   margin-right: 15px;
 }
 
+.btnView a{
+  text-decoration: none;
+}
+
 .btnView button {
+  /* background-color: #030a8c; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+
+  width: 120px;
   height: 50px;
   border: none;
   border-radius: 10px;
@@ -109,6 +133,7 @@ h4 {
 }
 
 .btnView button:hover {
+  background-color: #fff;
   transition: 0.3s ease;
   transform: scale(1.1);
 }
