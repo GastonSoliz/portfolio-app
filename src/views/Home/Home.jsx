@@ -28,27 +28,33 @@ export default function Home() {
           {lang === "es" ? "Desarrollador Full Stack" : "Full Stack Developer"}
         </h2> */}
         <div className={style.textContainer}>
-          <span>Hola! Mi nombre es </span>
+          <span>
+            {lang === "es" ? "Hola! Mi nombre es " : "Hi! My name is "}
+          </span>
           <h1>Gaston Soliz</h1>
-          <h2>Desarrollador Full Stack</h2>
+          <h2>
+            {lang === "es"
+              ? "Desarrollador Full Stack"
+              : "Full Stack Developer"}
+          </h2>
           <h4>
             HTML | CSS | Javascript | React.JS | Redux.js | Node.js | Express.js
             | PostgreSQL | Sequelize
           </h4>
           <p>
-            Experiencia con React (CRA / Vite.js / Next.js) en el frontend, y
-            Node.js / Express en el backend. En conjunto, me aventuro a crear
-            soluciones web que combinen la funcionalidad y el diseño ofrezco.
+            {lang === "es"
+              ? "Experiencia con React (CRA / Vite.js / Next.js) en el frontend, y Node.js / Express en el backend. En conjunto, me aventuro a crear soluciones web que combinen la funcionalidad y el diseño simple."
+              : "Experience with React (CRA / Vite.js / Next.js) on the frontend, and Node.js / Express on the backend. Overall, i focus on create web solutions that combine functonality and simple design"}
           </p>
           <p>
-            Mi objetivo es transformar ideas en posibles experiencias digitales
-            mediante soluciones creativas y eficentes, contribuyendo al progreso
-            de este ambito.
+            {lang === "es"
+              ? "Mi objetivo es transformar ideas en posibles experiencias digitales mediante soluciones creativas y eficentes, contribuyendo al progreso."
+              : "My goal is to transform ideas into possible digital experiences through creative and efficient solutions, contributing to progress"}
           </p>
           <p>
-            Comprometido con el aprendizaje continuo y evolucionar en el campo
-            del desarrollo web. Enfocado en el desarrollo de alta caldad, con un
-            enfoque especial en la formacion y el desarrollo profesional
+            {lang === "es"
+              ? "Comprometido con el aprendizaje continuo y evolucionar en el campo del desarrollo web. Enfocado en el desarrollo de alta calidad, limpio, con un enfoque especial en la formacion y el desarrollo profesional."
+              : "Committed to continuous learning and to evolving in the field of web development. Focused on the high-quality and clean development, with a special focus on training and proffesional development"}
           </p>
           <div className={style.buttons}>
             {lang === "es" ? (
