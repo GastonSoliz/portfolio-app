@@ -30,8 +30,8 @@ export default function WorkCardList({ lang }) {
   const projects = [
     {
       name: "Rick & Morty App",
-      typeEN: "Academic Individual project",
-      typeES: "Proyecto Individual Academico",
+      typeEN: "Full Stack project",
+      typeES: "Proyecto Full Stack",
       descriptionEN:
         "Application web that extracts data about characters of Rick & Morty series from the API: https://rickandmortyapi.com/ . A registration and login from database, navigation bar, character carousel, favourites section, search filters were implemented. The development environment used were: Create React App",
       descriptionES:
@@ -45,8 +45,8 @@ export default function WorkCardList({ lang }) {
     },
     {
       name: "Drivers App",
-      typeEN: "Academic Individual project",
-      typeES: "Proyecto Individual Academico",
+      typeEN: "Full Stack project",
+      typeES: "Proyecto Full Stack",
       descriptionEN:
         "Drivers API was made to extract data from a local API what contains information about Formula 1 Drivers, it includes their teams (which were saved in database), the purpose of this aplication was to make a complete CRUD, navigation bar, search filters. The development environment used were: Vite.js",
       descriptionES:
@@ -60,8 +60,8 @@ export default function WorkCardList({ lang }) {
     },
     {
       name: "Eventify App",
-      typeEN: "Academic Group project",
-      typeES: "Proyecto Grupal Academico",
+      typeEN: "Full Stack project",
+      typeES: "Proyecto Full Stack",
       descriptionEN:
         "The `EventifyPro` project is an E-Commerce to sell events, a registration and login with Auth0 Authentication, Admin and SuperAdmin Dashboard, Payment Gateway from MercadoPago with Cart, Event Carrousel, complete CRUD of Events and User, Search filters of Events, Reviews were implemented. The development environment used were: Next.js",
       descriptionES:
