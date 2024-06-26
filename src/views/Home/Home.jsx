@@ -16,7 +16,7 @@ export default function Home() {
       <div className={style.homeContainer} id="home">
         <div className={style.photoContainer}>
           <div className={style.photo}>
-            <img src={me} alt="me" />
+            <img src={me} alt="me" loading="lazy" />
           </div>
         </div>
         {/* <h2>

@@ -10,7 +10,7 @@ export default function PortfolioCard({ project, lang }) {
         <div className={style.infoCard}>
           <h2>{project.name}</h2>
           {project.tech.map((t, index) => (
-            <img src={t} key={index} />
+            <img src={t} key={index} loading="lazy" />
           ))}
         </div>
       </div>

@@ -1,13 +1,13 @@
 import style from "./scrollerSkills.module.css";
 import html from "../../assets/html.png";
 import css from "../../assets/css.png";
-import bootstrap from "../../assets/bootstrap.png"
+import bootstrap from "../../assets/bootstrap.png";
 import tailwind from "../../assets/tailwind.png";
 import js from "../../assets/js.png";
 import react from "../../assets/react.png";
 import next from "../../assets/next.png";
 import redux from "../../assets/redux.png";
-import typescript from "../../assets/typescript.png"
+import typescript from "../../assets/typescript.png";
 import node from "../../assets/node.png";
 import express from "../../assets/express.png";
 import sequelize from "../../assets/sequelize.png";
@@ -30,10 +30,10 @@ export default function Slider() {
   const images = [
     { tech: html, name: "HTML" },
     { tech: css, name: "CSS" },
-    { tech: bootstrap, name: "Bootstrap"},
+    { tech: bootstrap, name: "Bootstrap" },
     { tech: tailwind, name: "TailwindCSS" },
     { tech: js, name: "Javascript" },
-    { tech: typescript, name: "Typescript"},
+    { tech: typescript, name: "Typescript" },
     { tech: react, name: "ReactJS" },
     { tech: next, name: "NextJS" },
     { tech: redux, name: "Redux" },
@@ -43,7 +43,7 @@ export default function Slider() {
     { tech: postgresql, name: "PostgreSQL" },
     { tech: sql, name: "SQL" },
   ];
-  
+
   const slides = [...images, ...images, ...images];
 
   const images2 = [
@@ -87,7 +87,7 @@ export default function Slider() {
           <div className={style.slider_track}>
             {slides.map((slide, index) => (
               <div className={style.slideContainer} key={index}>
-                <img className={style.slide} src={slide.tech} />
+                <img className={style.slide} src={slide.tech} loading="lazy" />
                 <span className={style.slideName}>{slide.name}</span>
               </div>
             ))}
@@ -99,7 +99,7 @@ export default function Slider() {
           <div className={style.slider_track2}>
             {slides2.map((slide, index) => (
               <div className={style.slideContainer} key={index}>
-                <img className={style.slide} src={slide.tech} />
+                <img className={style.slide} src={slide.tech} loading="lazy" />
                 <span className={style.slideName}>{slide.name}</span>
               </div>
             ))}
@@ -127,9 +127,9 @@ export default function Slider() {
       </div>
       <Link to="/about">
         <button className={style.buttonLink}>
-          {lang === "es" 
-          ? "Más información sobre mis conocimientos!" 
-          : "More info about my knowledge!"}
+          {lang === "es"
+            ? "Más información sobre mis conocimientos!"
+            : "More info about my knowledge!"}
         </button>
       </Link>
     </div>
