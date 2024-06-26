@@ -1,22 +1,22 @@
 .aboutContainer {
-  display: flex;
+  /* display: flex; */
 
   padding: 0 20px 20px;
-  box-sizing: border-box;
 }
 
+/*
 .leftContainer {
   width: 60%;
 }
-
+*/
 .skills {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  width: 100%;
 }
 
 .side {
-  height: 100%;
   background-color: #fff;
   text-align: center;
   border-radius: 20px;
@@ -24,20 +24,20 @@
 
 .sideSkills {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  padding: 20px 0;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-bottom: 20px;
 }
 
 .sideSkills article {
   display: flex;
   justify-content: center;
-  margin: .5rem;
+  margin: 0.5rem 0;
 }
 
 .sideSkills img {
   width: 25px;
   height: 25px;
-  margin-right: .3rem;
+  margin-right: 0.3rem;
 }
 
 .sideSkills p,
@@ -49,10 +49,9 @@
 .textContainer {
   display: flex;
   flex-direction: column;
-  width: 45%;
-  right: auto;
 
-  padding: 30px;
+  width: 100%;
+  margin-top: 2rem;
 }
 
 .card {
@@ -69,6 +68,8 @@
 
   justify-content: center;
   align-items: center;
+  margin: auto;
+  padding: 0 5px;
 }
 
 .card img {
@@ -80,8 +81,8 @@
   font-size: 18px;
   text-align: center;
 }
-
-@media (max-width: 768px) {
+/*
+@media (max-width: 800px) {
   .aboutContainer {
     display: flex;
     flex-direction: column;
@@ -98,5 +99,24 @@
   .textContainer {
     display: flex;
     width: 100%;
+  }
+} */
+
+@media (min-width: 800px) {
+  .aboutContainer {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .leftContainer {
+    width: 60%;
+  }
+
+  .sideSkills {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .textContainer {
+    width: 40%;
   }
 }
