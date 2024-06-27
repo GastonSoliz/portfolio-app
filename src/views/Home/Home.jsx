@@ -12,21 +12,13 @@ export default function Home() {
   const { lang } = useLanguage();
 
   return (
-    <>
+    <main>
       <div className={style.homeContainer} id="home">
         <div className={style.photoContainer}>
           <div className={style.photo}>
             <img src={me} alt="me" loading="lazy" />
           </div>
         </div>
-        {/* <h2>
-          {lang === "es"
-            ? "Hola! mi nombre es Gaston Soliz"
-            : "Hi! I'm Gaston Soliz"}
-        </h2>
-        <h2>
-          {lang === "es" ? "Desarrollador Full Stack" : "Full Stack Developer"}
-        </h2> */}
         <div className={style.textContainer}>
           <span>
             {lang === "es" ? "Hola! Mi nombre es " : "Hi! My name is "}
@@ -79,6 +71,6 @@ export default function Home() {
       <div id="contact">
         <Contact />
       </div>
-    </>
+    </main>
   );
 }
