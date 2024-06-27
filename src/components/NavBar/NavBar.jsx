@@ -9,11 +9,17 @@ export default function NavBar() {
   const [nav, setNav] = useState(false);
   const { lang } = useLanguage();
   const location = useLocation();
-  console.log(location.pathname);
 
   function handleBar() {
     setNav(!nav);
   }
+
+  const redirrections = [
+    { es: "Inicio", en: "Home", a: "#home", link: "/" },
+    { es: "Projectos", en: "Projects", a: "#portfolio", link: "/work" },
+    { es: "Sobre mi", en: "About me", a: "#skills", link: "/about" },
+    { es: "Contacto", en: "Contact", a: "#contact", link: "/contact" },
+  ];
 
   return (
     <div className={style.navMobile}>
@@ -22,49 +28,23 @@ export default function NavBar() {
       </div>
       {location.pathname === "/" ? (
         <ul className={`${style.nav} ${nav ? style.open : ""}`}>
-          <li>
-            <a href="#home" onClick={handleBar}>
-              {lang === "es" ? "Inicio" : "Home"}
-            </a>
-          </li>
-          <li>
-            <a href="#portfolio" onClick={handleBar}>
-              {lang === "es" ? "Projectos" : "Projects"}
-            </a>
-          </li>
-          <li>
-            <a href="#skills" onClick={handleBar}>
-              {lang === "es" ? "Sobre mi" : "About me"}
-            </a>
-          </li>
-          <li>
-            <a href="#contact" onClick={handleBar}>
-              {lang === "es" ? "Contacto" : "Contact"}
-            </a>
-          </li>
+          {redirrections.map((red) => (
+            <li>
+              <a href={red.a} onClick={handleBar}>
+                {lang === "es" ? red.es : red.en}
+              </a>
+            </li>
+          ))}
         </ul>
       ) : (
         <ul className={`${style.nav} ${nav ? style.open : ""}`}>
-          <li>
-            <Link to="/" onClick={handleBar}>
-              {lang === "es" ? "Inicio" : "Home"}
-            </Link>
-          </li>
-          <li>
-            <Link to="/work" onClick={handleBar}>
-              {lang === "es" ? "Projectos" : "Projects"}
-            </Link>
-          </li>
-          <li>
-            <Link to="/about" onClick={handleBar}>
-              {lang === "es" ? "Sobre mi" : "About me"}
-            </Link>
-          </li>
-          <li>
-            <Link to="/contact" onClick={handleBar}>
-              {lang === "es" ? "Contacto" : "Contact"}
-            </Link>
-          </li>
+          {redirrections.map((red) => (
+            <li>
+              <Link to={red.link} onClick={handleBar}>
+                {lang === "es" ? red.es : red.en}
+              </Link>
+            </li>
+          ))}
         </ul>
       )}
       <ToggleButton />
