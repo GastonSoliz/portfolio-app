@@ -19,7 +19,7 @@
   background-color: #fff;
   font-weight: bold;
 
-  width:50%;
+  width: 50%;
 
   border-radius: 1rem;
 
@@ -28,7 +28,7 @@
 }
 
 .textContainer p {
-  margin:0;
+  margin: 0;
 }
 
 .textContainer button {
@@ -48,7 +48,7 @@
 }
 
 .textContainer2 p {
-  margin-bottom: auto; 
+  margin-bottom: auto;
 }
 
 .textContainer2 button {
@@ -139,7 +139,7 @@
 
 .buttonLink {
   max-width: 230px;
-  padding: 0.5rem;  
+  padding: 0.5rem;
   border-radius: 10px;
   border: none;
   background-color: #030a8c;

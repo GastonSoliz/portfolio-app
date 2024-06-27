@@ -1,7 +1,8 @@
 .allContainer {
   position: relative;
 
-  width: 470px;
+  width: 100%;
+  max-width: 450px;
   height: 350px;
   display: flex;
   justify-content: center;
