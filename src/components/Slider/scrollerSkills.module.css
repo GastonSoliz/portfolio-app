@@ -71,7 +71,7 @@
   display: flex;
   gap: 1rem;
   animation: scroll 20s linear infinite;
-  width: calc(200px * 8);
+  width: calc(250px * 8);
 }
 
 .slideContainer {
@@ -159,4 +159,15 @@
 .buttonLink:hover {
   transition: 0.3s ease;
   transform: scale(1.1);
+}
+
+@media (max-width: 800px) {
+  .slider {
+    width: 100%;
+  }
+
+  .textContainer,
+  .textContainer2 {
+    display: none;
+  }
 }
