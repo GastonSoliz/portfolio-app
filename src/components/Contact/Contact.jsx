@@ -89,22 +89,32 @@ export default function Contact() {
         </h2>
         <form onSubmit={sendEmail} className={style.formContainer}>
           <label>{lang === "es" ? "Correo: " : "Mail: "}</label>
-          <input 
-          type="email" 
-          name="email" 
-          placeholder={lang === "es" ? "ejemplo@mail.com" : "example@mail.com"} 
-          required />
+          <input
+            type="email"
+            name="email"
+            placeholder={
+              lang === "es" ? "ejemplo@mail.com" : "example@mail.com"
+            }
+            required
+          />
           <label>{lang === "es" ? "Asunto: " : "Subject: "}</label>
-          <input 
-          type="text" 
-          name="subject" 
-          placeholder={lang === "es" ? "Oportunidad de empleo" : "Job Opportunity"} 
-          required />
+          <input
+            type="text"
+            name="subject"
+            placeholder={
+              lang === "es" ? "Oportunidad de empleo" : "Job Opportunity"
+            }
+            required
+          />
           <label>{lang === "es" ? "Mensaje: " : "Message: "}</label>
           <textarea
             type="text"
             name="message"
-            placeholder={lang==="es"?"Buen dia, me presento...":"Good morning, i introduced myself..."}
+            placeholder={
+              lang === "es"
+                ? "Buen dia, me presento..."
+                : "Good morning, i introduced myself..."
+            }
             required
           ></textarea>
           <button type="submit">

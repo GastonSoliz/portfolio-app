@@ -59,6 +59,54 @@ export default function Contact() {
 
   return (
     <div className={style.contactContainer}>
+      <div className={style.formDivContainer}>
+        <h2>
+          {lang === "es"
+            ? "Mandame un mensaje a mi email!"
+            : "Send me a message to my mail!"}
+        </h2>
+        <form onSubmit={sendEmail} className={style.formContainer}>
+          <div>
+            <label>{lang === "es" ? "Correo: " : "Mail: "}</label>
+            <input
+              type="email"
+              name="email"
+              placeholder={
+                lang === "es" ? "ejemplo@mail.com" : "example@mail.com"
+              }
+              required
+            />
+          </div>
+          <div>
+            <label>{lang === "es" ? "Asunto: " : "Subject: "}</label>
+            <input
+              type="text"
+              name="subject"
+              placeholder={
+                lang === "es" ? "Oportunidad de empleo" : "Job Opportunity"
+              }
+              required
+            />
+          </div>
+          <div>
+            <label>{lang === "es" ? "Mensaje: " : "Message: "}</label>
+            <textarea
+              type="text"
+              name="message"
+              placeholder={
+                lang === "es"
+                  ? "Buen dia, me presento..."
+                  : "Good morning, i introduced myself..."
+              }
+              required
+            ></textarea>
+          </div>
+          <button type="submit">
+            {lang === "es" ? "Enviar mensaje" : "Send message"}
+          </button>
+        </form>
+        <ToastContainer />
+      </div>
       <div className={style.redContainer}>
         <h1>{lang === "es" ? "Contactame!" : "Contact me!"}</h1>
         <a href="mailto:gaston.e.soliz@gmail.com">
@@ -79,45 +127,6 @@ export default function Contact() {
             GitHub: GastonSoliz
           </p>
         </Link>
-      </div>
-      {/* MAPS DE QUILMES */}
-      <div className={style.formDivContainer}>
-        <h2>
-          {lang === "es"
-            ? "Mandame un mensaje a mi email!"
-            : "Send me a message to my mail!"}
-        </h2>
-        <form onSubmit={sendEmail} className={style.formContainer}>
-          <div>
-            <label>{lang === "es" ? "Correo: " : "Mail: "}</label>
-            <input 
-            type="email" 
-            name="email" 
-            placeholder={lang==="es"? "ejemplo@mail.com":"example@mail.com"} 
-            required />
-          </div>
-          <div>
-            <label>{lang === "es" ? "Asunto: " : "Subject: "}</label>
-            <input 
-            type="text" 
-            name="subject" 
-            placeholder={lang==="es"? "Oportunidad de empleo":"Job Opportunity"} 
-            required />
-          </div>
-          <div>
-            <label>{lang === "es" ? "Mensaje: " : "Message: "}</label>
-            <textarea
-            type="text"
-            name="message"
-            placeholder={lang==="es"?"Buen dia, me presento...":"Good morning, i introduced myself..."}
-            required
-            ></textarea>
-          </div>
-          <button type="submit">
-            {lang === "es" ? "Enviar mensaje" : "Send message"}
-          </button>
-        </form>
-        <ToastContainer />
       </div>
     </div>
   );
