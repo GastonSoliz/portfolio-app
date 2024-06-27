@@ -62,7 +62,7 @@ export default function Slider() {
 
   return (
     <div className={style.sliderContainer}>
-      <h1>{lang === "es" ? "HABILIDADES Y HERRAMIENTAS" : "SKILLS & TOOLS"}</h1>
+      <h1>{lang === "es" ? "Habilidades & Herramientas" : "Skills & Tools"}</h1>
       <div className={style.divContainer}>
         <div className={style.textContainer}>
           <p>
