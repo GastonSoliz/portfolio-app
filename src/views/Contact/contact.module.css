@@ -25,6 +25,11 @@
   /* margin-top: 50px; */
 }
 
+.formDivContainer p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
 .formContainer {
   display: flex;
   flex-direction: column;
@@ -103,6 +108,10 @@
 
 .redContainer {
   width: 100%;
+}
+
+.redContainer h2 {
+  font-size: 28px;
 }
 
 .redContainer p {

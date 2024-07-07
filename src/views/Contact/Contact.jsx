@@ -60,11 +60,11 @@ export default function Contact() {
   return (
     <div className={style.contactContainer}>
       <div className={style.formDivContainer}>
-        <h2>
+        <p>
           {lang === "es"
             ? "Mandame un mensaje a mi email!"
             : "Send me a message to my mail!"}
-        </h2>
+        </p>
         <form onSubmit={sendEmail} className={style.formContainer}>
           <div>
             <label>{lang === "es" ? "Correo: " : "Mail: "}</label>
@@ -108,7 +108,7 @@ export default function Contact() {
         <ToastContainer />
       </div>
       <div className={style.redContainer}>
-        <h3>{lang === "es" ? "Contactame!" : "Contact me!"}</h3>
+        <h2>{lang === "es" ? "Contactame!" : "Contact me!"}</h2>
         <a href="mailto:gaston.e.soliz@gmail.com">
           <p>
             <img src={email} />

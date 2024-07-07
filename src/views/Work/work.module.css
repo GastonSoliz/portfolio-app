@@ -8,8 +8,13 @@
   height: 100%;
 }
 
+.textContainer h2 {
+  font-size: 28px;
+}
+
 .textContainer {
-  font-size: 14px;
+  font-size: 20px;
+  font-weight: bold;
   text-align: center;
   width: 90%;
 }
