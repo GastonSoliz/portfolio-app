@@ -8,7 +8,7 @@ export default function Work() {
   return (
     <div className={style.workContainer}>
       <div className={style.textContainer}>
-        <h1>Portfolio</h1>
+        <h2>Portfolio</h2>
         <h2>
           {lang === "es"
             ? "Aqui se pueden ver los proyectos en los que he trabajado por mi cuenta o como parte de un equipo de manera mas detallada."

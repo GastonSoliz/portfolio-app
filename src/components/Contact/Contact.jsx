@@ -60,7 +60,7 @@ export default function Contact() {
   return (
     <div className={style.contactContainer}>
       <div className={style.redContainer}>
-        <h1>{lang === "es" ? "Contactame!" : "Contact me!"}</h1>
+        <h3>{lang === "es" ? "Contactame!" : "Contact me!"}</h3>
         <a href="mailto:gaston.e.soliz@gmail.com">
           <p>
             <img src={email} />
